@@ -1,0 +1,172 @@
+
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+              <title>My Fitness</title>
+        <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="subheader">
+                <div class="container">
+                    <p>FItness Life</p>
+                
+                    <a href="help.html">Help</a>
+                </div>
+            </div>
+            <!--==main header==-->
+            <div id="main-header">
+                <!--logo-->
+            <div id="logo">
+                <span id="ist">Our</span><span id="iist">FitnessLife</span>
+                </div>
+                <!--==serach area==-->
+                <div id="search">
+                <form action="">
+                    <input class="Serach-area" type="text" name="texy" placeholder="Serach here">
+                    <input class="search-btn" type="submit" name="submit" value="SEARCH">
+                    </form>
+                </div>
+                <!--==user-menu==-->
+                <div id="user-menu">
+                
+                <li><a href="log2.html">Login</a> </li>
+                 <li><a href="shop.html">Shop</a> </li>
+                </div>
+            </div>
+        </div>
+        <!--==navigation-bar==-->
+        <div id="navigation">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="exercise.html">Exercise</a>
+            <a href="diet.html">Diet</a>
+            <a href="calories%20calculator.html">Calories Calculator</a>
+            <a href="exercise video.html">Exercise Video</a>
+        
+            </nav>
+        </div>
+        
+        
+        
+        <!--======Calories Calculator-slider======-->
+        <li><img src="img/calories.jpg" height="280"> </li>
+        
+        
+        
+        
+        
+        
+        <body>
+        <div class="container">
+        <div id="heading">
+            <h2>Calories Calculator</h2>
+            <br>
+            </div>
+            
+            
+            
+      <div>
+<form action="" onsubmit="myFunction()">
+            <p> Height : <input type="text" id="height" placeholder="0000"><select><option>Feet</option><option>CM</option></select> 
+            </p>
+            <p> Weight : <input type="text" id="weight" placeholder="0000"><select><option>KG</option><option>Pound</option></select>
+            </p>
+            <p> Age : <input type="text" id="age" placeholder="Years">
+            </p>
+            <p> Gender : <input type="radio" id="male" name="Sex" checked value="male"> Male<input type="radio" name="Sex" id="female" value="female">Female
+            </p>
+               
+             
+            <p> Calories : <input type="text" id="ans" placeholder="0000" readonly></p>
+<input type="submit" value="submit">
+    
+    <!--<button onclick="myFunction()" type="calculate()" style=height:30px;width:110px >Calories</button>
+        -->    <button type="reset" style=height:30px;width:90px value="Reset">Clear</button>
+            </form>
+            
+            
+        </div>
+        
+         <script language="javascript" type="text/javascript">
+    function myFunction() {
+        
+        
+        var age=document.getElementById("age").value;
+var height=document.getElementById("height").value;
+var weight=document.getElementById("weight").value;
+var female=document.getElementsByName("female").value;
+var male=document.getElementsByName("male").value;
+if (document.getElementsByName("male").checked) {
+    var maleCals = male+ (13.75 * weight/2.2) + (5.0 * (height * 2.54) - (6.75 x age);
+        document.getElementById("totalCals").innerHTML = maleCals; 
+} else (document.getElementsByName("female").checked) {
+    var femaleCals = female + (9.56 * weight/2.2) + (1.84 * (height * 2.54) - (4.67 x age); 
+        document.getElementById("totalCals").innerHTML = femaleCals;
+
+    }
+	
+        
+       
+	}
+    </script>
+
+            
+            
+            
+            <li><img src="img/-calories.jpg" height="280"> </li>
+        
+        
+
+        
+        
+        
+            </div>
+        
+        </body>
+        
+    
+       <div id="footer">
+        <div class="container">
+            <div class="footer_sub">
+                   <h2>Our Major Project</h2>
+                <p>This is Our Major Project Based on the making website. In this website we used software name Brackets,we write an coding in HTML,CSS,JAVASCRIPT,FUNCTIONS and also using BXSLIDER in this website. </p></div>
+            <div class="footer_sub_2">
+            <center>
+                <h2>Important Links</h2>
+                <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="exercise.html">Exercise</a> </li>
+                <li><a href="diet.html">Diet</a> </li>
+                <li><a href="calories%20calculator.html">Calories Calculator</a> </li>
+                <li><a href="exercise video.html">Exercise Video</a> </li>            
+                    <li> <a href="shop.html">Shop</a></li>
+                    
+                </ul>
+                </center> </div>
+            <div class="footer_sub_2">
+            <center><h2>Social Links</h2>
+                <ul>
+                <li><a href="#">Facebook</a> </li>
+                    <li><a href="#">Instagram</a> </li>
+                    <li><a href="#">Twitter</a> </li>
+                    <li><a href="#">Youtube</a> </li>
+                    <li><a href="#">Google+</a> </li>
+                    <li><a href="#">Linkdin</a> </li>
+                    <li><a href="#">Blogger</a> </li>
+                </ul>
+                </center>
+            </div>
+           
+           
+           </div>
+        </div> 
+   <script src="http://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/my.js"></script>
+        </div>    </body>
+</html>

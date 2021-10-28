@@ -1,0 +1,13 @@
+   var w = document.getElementById("weight").value;
+             var h = document.getElementById("height").value;
+             var a = document.getElementById("age").value;
+             var result = 10*parseInt(w) + 6.25*parseInt(h) -5*parseInt(a) + 5;
+    
+        alert(result);
+           document.getElementById("ans").value = result;
+       
+        
+        
+             var c = 10*w + 6.25*h -5a + 5;
+        
+            document.getElementById("ans").innerHTML = c;
